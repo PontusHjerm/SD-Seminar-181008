@@ -3,7 +3,7 @@ page 50106 "CSD Seminar Comment Sheet"
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
-    SourceTable = "CSD Seminar Comment";
+    SourceTable = "CSD Seminar Comment Line";
 
     layout
     {

@@ -3,8 +3,8 @@ page 50107 "CSD Seminar Comment List"
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
-    SourceTable = "CSD Seminar Comment";
-    Editable=false;
+    SourceTable = "CSD Seminar Comment Line";
+    Editable = false;
     layout
     {
         area(Content)

@@ -1,4 +1,4 @@
-table 50104 "CSD Seminar Comment"
+table 50104 "CSD Seminar Comment Line"
 {
     DrillDownPageId = 50107;
     LookupPageId = 50107;
