@@ -1,0 +1,27 @@
+{
+  "id": "ae083351-2f5c-4aac-94d0-ddcfa9fbcbf4",
+  "name": "SD Seminar",
+  "publisher": "D. V. Veloper",
+  "brief": "Awsome App",
+  "description": "app test",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "features": ["TranslationFile"
+    
+  ],
+  "target": "Internal",
+  "idRange": {
+    "from": 50100,
+    "to": 50199
+  },
+  "runtime": "2.0"
+}
