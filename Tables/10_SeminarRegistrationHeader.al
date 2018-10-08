@@ -319,6 +319,7 @@ table 50110 "CSD Seminar Reg. Header"
             SeminarSetup.GET;
             SeminarSetup.TestField("Seminar Registration Nos.");
             NoSeriesMgt.InitSeries(SeminarSetup."Seminar Registration Nos.", xRec."No. Series", 0D, "No.", "No. Series");
+            
         end;
 
         if "Posting Date" = 0D then
