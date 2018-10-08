@@ -5,6 +5,7 @@ page 50106 "CSD Seminar Comment Sheet"
     UsageCategory = Administration;
     SourceTable = "CSD Seminar Comment Line";
     AutoSplitKey = true;
+    caption='Seminar Comment Sheet';
     layout
     {
         area(Content)

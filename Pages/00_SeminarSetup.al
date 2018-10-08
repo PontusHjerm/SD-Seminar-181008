@@ -8,7 +8,6 @@ page 50100 "CSD Seminar Setup"
     Caption = 'Seminar Setup';
     DeleteAllowed = false;
 
-
     layout
     {
         area(Content)
