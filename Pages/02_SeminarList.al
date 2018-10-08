@@ -86,3 +86,4 @@ page 50102 "CSD Seminar List"
             }
         }
     }
+}

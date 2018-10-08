@@ -6,7 +6,7 @@ page 50100 "CSD Seminar Setup"
     SourceTable = "CSD Seminar Setup";
     InsertAllowed = false;
     Caption = 'Seminar Setup';
-    DeleteAllowed = false,
+    DeleteAllowed = false;
 
 
     layout
@@ -20,7 +20,7 @@ page 50100 "CSD Seminar Setup"
                     
                     
                 }
-                field("Posted Seminar Reg. Nos."; "Posted Seminar  Reg Nos.")
+                field("Posted Seminar Reg. Nos."; "Posted Seminar Reg. Nos.")
                 {
                     
                     
@@ -38,22 +38,5 @@ page 50100 "CSD Seminar Setup"
         IF not get then
             insert(true);    
     end;
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                ApplicationArea = All;
-                
-                trigger OnAction()
-                begin
-                    
-                end;
-            }
-        }
-    }
-    
-    var
-        myInt: Integer;
+
 }

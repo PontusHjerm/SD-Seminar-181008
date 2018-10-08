@@ -25,6 +25,6 @@ pageextension 50101 "CSD ResourceListExt" extends "Resource List"
 
     var
         [InDataSet]
-        ShowMaxField: Boolean
-            ShowType: Boolean
+        ShowMaxField: Boolean;
+            ShowType: Boolean;
 }
