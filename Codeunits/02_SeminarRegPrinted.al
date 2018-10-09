@@ -1,15 +1,14 @@
-codeunit 50102 "CSD SeminarRegprinted"
+codeunit 50102 SeminarRegPrinted
+//   Chapter 9 - Lab 1-2
+//     - Added Codeunit
 {
     TableNo = "CSD Seminar Reg. Header";
 
-    trigger OnRun()
+    trigger OnRun();
     begin
         Find;
-        "No. Printed" += 1;
-        Modify();
+        "No. Printed" += 1; 
+        Modify;
         Commit;
     end;
-
-    var
-        myInt: Integer;
 }
