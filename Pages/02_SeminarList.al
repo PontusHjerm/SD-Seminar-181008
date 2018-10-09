@@ -1,29 +1,30 @@
 page 50102 "CSD Seminar List"
+// CSD1.00 - 2018-01-01 - D. E. Veloper
+// Chapter 5 - Lab 3-6
 {
-    PageType = List;
-    ApplicationArea = All;
-    UsageCategory = Lists;
-    SourceTable = "CSD Seminar";
     Caption = 'Seminar List';
+    PageType = List;
+    SourceTable = "CSD Seminar";
     Editable = false;
     CardPageId = 50101;
+    UsageCategory = Lists;
+
     layout
     {
-        area(Content)
+        area(content)
         {
-            repeater("Group")
+            repeater(Group)
             {
                 field("No."; "No.")
                 {
-
                 }
                 field(Name; Name)
                 {
                 }
-                field("Search Name"; "Search Name")
+                field("Seminar Duration"; "Seminar Duration")
                 {
                 }
-                field("Seminar Duration"; "Seminar Duration")
+                field("Seminar Price"; "Seminar Price")
                 {
                 }
                 field("Minimum Participants"; "Minimum Participants")
@@ -32,41 +33,19 @@ page 50102 "CSD Seminar List"
                 field("Maximum Participants"; "Maximum Participants")
                 {
                 }
-                field(Blocked; Blocked)
-                {
-                }
-                field("Last Date Modified"; "Last Date Modified")
-                {
-                }
-
-
-                field("Gen. Prod. Posting Group"; "Gen. Prod. Posting Group")
-                {
-
-                }
-                field("VAT Prod. Posting Group"; "VAT Prod. Posting Group")
-                {
-
-                }
-                field("Seminar Price"; "Seminar Price")
-                {
-
-                }
             }
         }
-        area(Factboxes)
+        area(FactBoxes)
         {
-            systempart(Links; Links)
+            systempart("Links"; Links)
             {
-
             }
-            systempart(Notes; Notes)
+            systempart("Notes"; Notes)
             {
-
             }
         }
-    }
 
+    }
 
     actions
     {
@@ -76,13 +55,49 @@ page 50102 "CSD Seminar List"
             {
                 action("Co&mments")
                 {
-                    //               RunObject=page "CSD Seminar Comment Sheet";
-                    //               RunPageLink = "Table Name" = const(Seminar), "No."=field("No.");
+                    RunObject = page "CSD Seminar Comment Sheet";
+                    RunPageLink = "Table Name" = const (Seminar), "No." = field ("No.");
                     Image = Comment;
                     Promoted = true;
                     PromotedIsBig = true;
                     PromotedOnly = true;
                 }
+
+                action("Ledger Entries")
+                {
+                    Caption = 'Ledger Entries';
+                    RunObject = page "CSD Seminar Ledger Entries";
+                    RunPageLink = "Seminar No." = field ("No.");
+                    Promoted = true;
+                    PromotedCategory = Process;
+                    ShortcutKey = "Ctrl+F7";
+                    Image = WarrantyLedger;
+                }
+                action("&Registrations")
+                {
+                    Caption = 'Registrations';
+                    RunObject = page "CSD Posted Seminar Reg. List";
+                    RunPageLink = "Seminar No." = field ("No.");
+                    Image = Timesheet;
+                    Promoted = true;
+                    PromotedCategory = Process;
+                    ApplicationArea = All;
+
+                }
+            }
+
+        }
+        area(Processing)
+        {
+            action("Seminar Registration")
+            {
+                Caption = 'Seminar registration';
+                RunObject = page "CSD Seminar Registration";
+                RunPageLink = "Seminar No." = field ("No.");
+                RunPageMode = create;
+                Image = NewTimesheet;
+                Promoted = true;
+                PromotedCategory = New;
             }
         }
     }
