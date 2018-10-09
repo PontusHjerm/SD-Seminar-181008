@@ -288,6 +288,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Reg. Header - Field Posting No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3775708622 - Field 2682724073 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Printed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Reg. Header - Field No. Printed - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3775708622 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
           <source>You cannot delete the Seminar Registration, because there is at least one %1 where %2=%3.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1402,6 +1407,11 @@
           <source>Posted Seminar Charges</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page CSD Posted Seminar Charges - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2980416107 - ReportLabel 300997005" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Seminar Registration List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report SeminarParticipantsList - ReportLabel SeminarRegistrationHeaderCap</note>
         </trans-unit>
         <trans-unit id="PageExtension 1293683583 - Control 743222972 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Seminar</source>
