@@ -1,4 +1,4 @@
-codeunit 50199 InstallSeminar
+codeunit 50149 InstallSeminar
 {
     Subtype = Install;
 
