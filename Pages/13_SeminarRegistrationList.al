@@ -4,7 +4,9 @@ page 50113 "CSD Seminar Registration List"
     //   Chapter 6 - Lab 3
     //     - Created new page
     //   Chapter 7 - Lab 5-8
-    //     - Added Post Action  
+    //     - Added Post Action 
+    //   Chapter 9 - Lab 5-8
+    //     - Added Post Acti
 
     Caption = 'Seminar Registration List';
     CardPageID = "CSD Seminar Registration";
@@ -69,7 +71,7 @@ page 50113 "CSD Seminar Registration List"
                     Image = Comment;
                     RunObject = Page 50106;
                     RunPageLink = "No." = Field ("No.");
-                    RunPageView = where ("Table Name" = Const ("Seminar Registration"));
+                    RunPageView = where ("Table Name" = const("Seminar Registration"));
                 }
                 action("&Charges")
                 {
@@ -94,12 +96,12 @@ page 50113 "CSD Seminar Registration List"
                     Image = Print;
                     Promoted = true;
                     PromotedIsBig = true;
-                    PromotedCategory = Report;
+                    PromotedCategory = Process;
                     trigger OnAction();
                     var
-                        SeminarReportselection: Record "CSD Seminar Report Selections";
+                        SeminarReportSelection: Record "CSD Seminar Report Selections";
                     begin
-                        SeminarReportselection.PrintReportSelection(SeminarReportselection.Usage::Registration, Rec);
+                        SeminarReportSelection.PrintReportSelection(SeminarReportSelection.Usage::Registration, Rec);
                     end;
                 }
             }

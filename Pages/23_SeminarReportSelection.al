@@ -8,6 +8,7 @@ page 50123 "CSD Seminar Report Selection"
     PageType = Worksheet;
     SaveValues = true;
     SourceTable = "CSD Seminar Report Selections";
+    UsageCategory=Administration;
 
     layout
     {

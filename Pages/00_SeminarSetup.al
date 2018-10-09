@@ -26,7 +26,9 @@ page 50100 "CSD Seminar Setup"
                 }
             }
         }
+        
     }
+    
 
 trigger OnOpenPage();
 begin
