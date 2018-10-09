@@ -3,6 +3,7 @@ report 50101 SeminarParticipantsList
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
     DefaultLayout = RDLC;
+    RDLCLayout = './Layouts/SeminarRegParticipantList.rdl';
 
     dataset
     {
